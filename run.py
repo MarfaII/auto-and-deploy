@@ -10,9 +10,12 @@ import yfinance as yf
 from pgdb import PGDataBase 
 
 
+#путь для текущей директории
+dirname = os.path.dirname(__file__)
+
 #работаем с config
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read(os.path.join(dirname,'config.ini'))
 
 COMPANIES = (eval(config['Companies']['COMPANIES']))
 SALES_PATH = config['Files']['SALES_PATH']
