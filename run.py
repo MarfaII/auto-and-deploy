@@ -24,7 +24,7 @@ DATABASE_ = config['Database']
 #загружаем из таблички (generate_data.py)
 sales_df = pd.DataFrame()
 if os.path.exists(SALES_PATH):
-    sales_df = pd.read_csv(SALES_PATH)
+    sales_df = pd.read_csv(os.path.join(dirname,SALES_PATH))
     os.remove(SALES_PATH)    
 
 hist_d ={}
