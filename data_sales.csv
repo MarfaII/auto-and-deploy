@@ -1,0 +1,9 @@
+dt,company,transaction_type,amount
+2025-05-15,TSLA,buy,636
+2025-05-15,PFE,buy,141
+2025-05-15,F,buy,672
+2025-05-15,BAC,buy,974
+2025-05-15,TSLA,sell,893
+2025-05-15,PFE,sell,864
+2025-05-15,F,sell,957
+2025-05-15,BAC,sell,553
